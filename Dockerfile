@@ -1,5 +1,8 @@
-FROM python:3-alpine
-COPY . /python
-WORKDIR /python
-RUN pip install -r requirements.txt
-CMD python /python/app.py
+from flask import Flask
+
+app = Flask(__name__)
+
+
+@app.route('/')
+def counter():
+    return 'Hello From WebMagic Informatica'
