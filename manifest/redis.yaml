@@ -41,7 +41,7 @@ spec:
       volumes:
         - name: redis-vol
           persistentVolumeClaim:
-            claimName: pvc-demo
+            claimName: redis-pvc
       containers:
       - name: redis
         image: redis
