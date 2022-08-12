@@ -24,7 +24,7 @@ spec:
           - name: FLASK_APP
             value: app.py
           - name: WEB2_COUNTER_MSG
-            value: visitors
+            value: visitors on argo app deployment
 ---
 apiVersion: v1
 kind: Service
