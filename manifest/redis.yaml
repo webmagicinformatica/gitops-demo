@@ -53,7 +53,7 @@ spec:
         - containerPort: 6389
         volumeMounts:
          - mountPath: "/data"
-           name: redis-data
+           name: redis-vol
 ---
 apiVersion: v1
 kind: Service
