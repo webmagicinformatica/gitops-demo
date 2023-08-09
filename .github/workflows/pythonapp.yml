@@ -13,7 +13,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v1
 
-    - name: Log in to Azure Container Registry
+    - name: Log in to Azure Container 
       uses: azure/docker-login@v1
       with:
         login-server: ${{ secrets.AZURE_REGISTRY_URL }}
