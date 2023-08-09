@@ -22,5 +22,5 @@ jobs:
 
     - name: Build and push Docker image
       run: |
-        docker build -t ${{ secrets.AZURE_REGISTRY_URL }}/my-image:${{ github.sha }} .
-        docker push ${{ secrets.AZURE_REGISTRY_URL }}/my-image:${{ github.sha }}
+        docker build -t ${{ secrets.AZURE_REGISTRY_URL }}/fahad:${{ github.sha }} .
+        docker push ${{ secrets.AZURE_REGISTRY_URL }}/fahad:${{ github.sha }}
